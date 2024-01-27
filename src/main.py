@@ -7,7 +7,7 @@ df = get_stock_data()
 df['Hisse Adı'] = df['Hisse Adı'].str.replace(r'\r|\n|\u200b', '', regex=True)
 df['Hisse Adı'] = df['Hisse Adı'].astype(str)
 
-# Sort by Stock Name
+# Sort by stock name
 df = df.sort_values(by='Hisse Adı', ascending=True)
 
 # Remove single quotes
